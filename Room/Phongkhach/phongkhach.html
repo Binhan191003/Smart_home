@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Trí Bình An</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="switch.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hi Bình An!</h1>
+            
+            <div class="widget">
+                <i class="fa-solid fa-cloud-sun"></i> 
+                <h3>TP.Thủ Đức</h3>
+                <h4><span id="temp">28</span><span>°</span></h4>
+            </div>
+
+            <div class="details">
+                <p>Nhiệt độ <span id="temp2">28</span><span>°</span></p>
+                <p>Độ ẩm <span id="humid">44</span><span>%</span></p>
+                <p>Gió <span id="air">3</span><span>km/h</span></p>
+                <p>Mịn <span id="pm">44</span><span>pm</span></p>
+            </div>
+        </div>
+        
+        <div class="room-controls">
+            <a href="/index.html">
+                <div class="room-control"><h5><i class="fa-solid fa-arrow-left"></i> Quay lại</h5></div>
+            </a>
+                <div class="room-control"><h5>Phòng khách</h5></div>
+            </a>
+                <div class="room-control"><h5>Phòng ngủ</h5></div>
+            </a>
+        </div>
+
+        <div class="room-list">
+
+            <div class="device" id="dev_01">
+                <i class="fas fa-tv icon-tv" ></i>
+                <h2>Smart TV</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_01">
+                        <span class="slider round"></span>
+                </label>
+                
+            </div>
+
+            <div class="device" id="dev_02">
+                <span class="material-symbols-outlined">curtains</span>
+                <h2>Curtains</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_02">
+                        <span class="slider round"></span>
+                </label>                
+            </div>
+
+            <div class="device" id="dev_03">
+                <span class="material-symbols-outlined">climate_mini_split</span>
+                <h2>Air conditioner</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_03">
+                        <span class="slider round"></span>
+                </label>
+                
+            </div>
+
+            <div class="device" id="dev_04">
+                <i class="fas fa-volume-up icon-speaker" ></i>
+                <h2>Music</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_04">
+                        <span class="slider round"></span>
+                </label>
+               
+            </div>
+
+            <div class="device" id="dev_05">
+                <i class="fas fa-lightbulb icon-light" ></i>
+                <h2>Light</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_05">
+                        <span class="slider round"></span>
+                </label>
+                
+            </div>
+
+            <div class="device" id="dev_06">
+                <i class="fa-solid fa-camera" id="camera"></i>
+                <h2>Camera</h2>
+                <label class="switch">
+                        <input type="checkbox", id="sw_06">
+                        <span class="slider round"></span>
+                </label>
+                
+            </div>
+
+        </div>
+
+        <div class="item">
+            <i class="fa-solid fa-house-user"></i>
+            <i class="fa-solid fa-clock"></i>
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="./device.js"></script>
+</body>
+</html>

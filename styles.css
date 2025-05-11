@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+h2{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+h3{
+    padding-left:10px;
+    font-size: 25px;
+    color: #ffffff;
+}
+h4{ 
+    padding-bottom:5px;
+    padding-left:200px;
+    font-size: 30px;
+    color: #ffffff;
+}
+h5{    
+    padding-left:5px;
+    font-size: 14px;
+    color: #ffffff;}
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.container {
+    width: 475px;
+    height: auto;
+    border-radius: 30px;
+    background-color: #1b1b1f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    background:#5edcb5;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.header i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 20px;
+    margin: 5px 0;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.header span {
+    font-weight: bold;
+}
+
+.room-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    background-color: #252530;
+    border-radius: 30px;
+}
+.room-control {
+    padding: 20px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style for the active tab (All Devices) */
+.room-controls a:nth-child(1) 
+.room-control {
+    border:#333333 1px solid;
+    background-color: #1b1b1f;
+    color: #fff;
+    font-weight: bold;
+}
+
+.room-controls a {
+    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ <a> */
+}
+
+.room-control:hover {
+    background-color: #303035;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    padding: 10px;
+    text-decoration: none;
+    max-height: 520px;       
+    overflow-y: auto;        
+    padding-right: 10px;     
+}
+
+.room-list .device {
+    flex: 0 0 calc(50% - 7.5px); 
+    box-sizing: border-box; 
+}
+
+.device {
+    background-color: #252530;
+    border-radius: 15px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    text-align: center;
+}
+
+.device i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.device p {
+    font-size: 15px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.material-symbols-outlined {
+    font-size: 50px;
+    margin-bottom: 10px; 
+}
+
+.item {
+    background-color: #252530;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    border-radius: 15px ;
+    margin-top: 10px;
+}
+
+.item i {
+    font-size: 20px;
+    color: #777;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item i:first-child {
+    color: #5edcb5;
+    font-size: 29px;
+}
+
+.item i:nth-child(2) {
+    position: relative;
+    right: 8px;
+}
+
+.item i:nth-child(3) {
+    color: #ffffff;
+    font-size: 35px;
+    border: solid 1px #5edcb5;
+    border-radius: 50%;
+    background-color: #5edcb5;
+    position: relative;
+    right: 15px;
+}
+
+.item i:nth-child(4),
+.item i:nth-child(5){
+    position: relative;
+    right: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.details p {
+    font-size: 19px;
+}
+.widget {
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
