@@ -37,7 +37,8 @@ body {
 }
 
 .container {
-    width: 475px;
+    width: 100%;
+    max-width: 475px;
     border-radius: 30px;
     background-color: #1b1b1f;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
